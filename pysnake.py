@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import pygame
 import os
 import random
@@ -50,7 +48,7 @@ def check_colisions(state):
         if hX == x and hY ==y:
             return True
 
-    if hX == -1 or hY == -1 or hX > SQUARE_COUNT or hY > SQUARE_COUNT:
+    if hX == -1 or hY == -1 or hX > SQUARE_COUNT - 1 or hY > SQUARE_COUNT - 1:
         return True
 
     return False
